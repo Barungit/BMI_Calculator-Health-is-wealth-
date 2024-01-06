@@ -1,16 +1,21 @@
 import './Form.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Result from './Result';
 
 function Form(){
 const [formData, setFormData] = useState({});
 const [formValues, setFormValues] = useState([]);
 const [disp,setDisp] = useState(false);
+const navigate = useNavigate();
 
 const handleSubmit = (e) => {
     e.preventDefault();
     setDisp(true);
     setFormValues(Object.entries(formData));
+    
+   // navigate("/result")
   };
 
   // input change handler
@@ -46,6 +51,7 @@ const handleSubmit = (e) => {
           ))}
         </ul>
       </div>
+      
       </div>
         
       </div>

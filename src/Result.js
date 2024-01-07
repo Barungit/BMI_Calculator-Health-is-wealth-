@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
 
-function Result(props) {
+function Result() {
     
     return(
         

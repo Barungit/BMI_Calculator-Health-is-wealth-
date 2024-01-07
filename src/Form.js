@@ -8,15 +8,24 @@ function Form(){
 const [formData, setFormData] = useState({});
 const [formValues, setFormValues] = useState([]);
 const [disp,setDisp] = useState(false);
+const [bmi, setBMI] = useState();
+const dataToPass = "Hello from ParentComponent";
 const navigate = useNavigate();
 
 const handleSubmit = (e) => {
     e.preventDefault();
     setDisp(true);
     setFormValues(Object.entries(formData));
-    
-   // navigate("/result")
+    calcBMI();
+  // navigate("/result")
   };
+
+  const calcBMI=()=>{
+    const weight = formData.weight;
+    const height = formData.height;
+    var bmi = weight/ Math.pow(height,2);
+    setBMI(bmi.toFixed(2));
+  }
 
   // input change handler
   const handleChange = (e) => {
@@ -32,7 +41,7 @@ const handleSubmit = (e) => {
 
           <br/>
           <label for='height' className='my-3 mx-3'> Height : </label>
-          <input type='number' placeholder='in cms' name='height' onChange={handleChange}/>
+          <input type='number' step='any' placeholder='in cms' name='height' onChange={handleChange}/>
           <br/>
 
           <button type='submit' className=' my-3 btn btn-warning' >
@@ -50,8 +59,11 @@ const handleSubmit = (e) => {
             </li>
           ))}
         </ul>
+        <div>
+          <h3>BMI : {bmi}</h3>
+        </div>
       </div>
-      
+   
       </div>
         
       </div>

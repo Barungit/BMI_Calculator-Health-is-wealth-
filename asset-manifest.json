@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/BMI_Calculator-Health-is-wealth-/static/css/main.ac662164.css",
-    "main.js": "/BMI_Calculator-Health-is-wealth-/static/js/main.5f8b4d90.js",
+    "main.css": "/BMI_Calculator-Health-is-wealth-/static/css/main.b0ee9a11.css",
+    "main.js": "/BMI_Calculator-Health-is-wealth-/static/js/main.ec697ce8.js",
     "static/js/787.13eaa237.chunk.js": "/BMI_Calculator-Health-is-wealth-/static/js/787.13eaa237.chunk.js",
     "index.html": "/BMI_Calculator-Health-is-wealth-/index.html",
-    "main.ac662164.css.map": "/BMI_Calculator-Health-is-wealth-/static/css/main.ac662164.css.map",
-    "main.5f8b4d90.js.map": "/BMI_Calculator-Health-is-wealth-/static/js/main.5f8b4d90.js.map",
+    "main.b0ee9a11.css.map": "/BMI_Calculator-Health-is-wealth-/static/css/main.b0ee9a11.css.map",
+    "main.ec697ce8.js.map": "/BMI_Calculator-Health-is-wealth-/static/js/main.ec697ce8.js.map",
     "787.13eaa237.chunk.js.map": "/BMI_Calculator-Health-is-wealth-/static/js/787.13eaa237.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac662164.css",
-    "static/js/main.5f8b4d90.js"
+    "static/css/main.b0ee9a11.css",
+    "static/js/main.ec697ce8.js"
   ]
 }
